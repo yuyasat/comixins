@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.description = "Comixins helps to introduce the compass-mixins."
   s.license     = "MIT"
 
-  s.files = Dir["{lib, vender}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails"
