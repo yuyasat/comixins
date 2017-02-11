@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.authors     = ["yuyasat"]
   s.email       = ["yuyasat.works@gmail.com"]
   s.homepage    = "https://github.com/yuyataki/comixins"
-  s.summary     = "Comixins helps to introduce the compass-mixins."
-  s.description = "Comixins helps to introduce the compass-mixins."
+  s.summary     = "Comixins helps to introduce the compass-mixins to Rails application."
+  s.description = "Comixins helps to introduce the compass-mixins to Rails application."
   s.license     = "MIT"
 
   s.files = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
