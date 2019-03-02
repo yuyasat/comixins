@@ -16,14 +16,14 @@ $ bundle
 ## Usage
 
 Replace compass with comixins.
-```scss
+```diff
 - @import 'compass';
 + @import 'comixins';
 ```
 
 This gem does not support `inline-image` which converts images to Base64.
 Please use `asset-data-url` instead of `inline-image`.
-```scss
+```diff
 - background-image: inline-image('comixins.png');
 + background-image: asset-data-url('comixins.png');
 ```
